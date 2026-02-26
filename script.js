@@ -14,3 +14,9 @@ toggleMusicaBtn.addEventListener("click", () => {
         toggleMusicaBtn.textContent = "🎵 Tocar Música";
     }
 });
+
+const index = Math.floor(Math.random() * filmes.length);
+const filme = filmes[index];
+
+imagemFilme.src = filme.imagem;
+imagemFilme.alt = `Poster de ${filme.titulo}`;
