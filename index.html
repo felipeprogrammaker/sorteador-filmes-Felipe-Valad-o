@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sorteador de Filmes & Snacks</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>Sorteador de Filmes & Snacks</h1>
+        <p>Escolha um filme aleatório e descubra a comida perfeita para acompanhar!</p>
+    </header>
+
+    <main>
+        <section id="sorteio">
+            <button id="sortearBtn">🎬 Sortear Filme</button>
+            <div id="filmeSorteado" class="card hidden">
+                <img id="imagemFilme" src="" alt="Poster do Filme">
+                <h2 id="tituloFilme"></h2>
+                <p id="sinopseFilme"></p>
+                <p><strong>Gênero:</strong> <span id="generoFilme"></span></p>
+            </div>
+            <div id="comidasSugeridas" class="card hidden">
+                <h3>Comidas sugeridas:</h3>
+                <div id="listaComidas" class="comidas-grid"></div>
+            </div>
+        </section>
+
+        <section id="listaCompleta">
+            <h2>Filmes & Comidas</h2>
+            <div class="cards-container"></div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Feito com ❤️ para amantes de cinema</p>
+        <p><a href="https://github.com/seuusuario" target="_blank">GitHub</a></p>
+    </footer>
+
+    <!-- Música de fundo -->
+    <audio id="musicaFundo" loop>
+        <source src="musica.mp3" type="audio/mpeg">
+        Seu navegador não suporta áudio.
+    </audio>
+
+    <!-- Botão de controle de música -->
+    <div id="controleMusica">
+        <button id="toggleMusica">🔊 Tocar Música</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
